@@ -1,3 +1,5 @@
+# Anime-Arena
+
 Projeto Final de Curso - LEIM 2021/2022 A45170
 
 A pasta 00_Planeamento contém um documento .pdf que descreve o planeamento do projeto.
