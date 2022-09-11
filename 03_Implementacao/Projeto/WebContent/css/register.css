@@ -1,0 +1,208 @@
+
+
+input[type=text] {
+	background-color: white;
+	background-image: url('../img/login_register_icons/Username.png');
+	background-position: 8px 3px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	text-align: center;
+	border-radius: 20px;
+	border-width: 1px;
+	
+	margin: 10px;
+	border-style: solid;
+	border-color: black;
+	font-family: 'PP_Mori_medium';
+	font-size: 12px;
+	height: 30px;
+}
+input[type=password] {
+	background-color: white;
+	background-image: url('../img/login_register_icons/Password.png');
+	background-position: 8px 3px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	text-align: center;
+	border-radius: 20px;
+	border-width: 1px;
+	
+	margin: 10px;
+	border-style: solid;
+	border-color: black;
+	font-family: 'PP_Mori_medium';
+	font-size: 12px;
+	height: 30px;
+}
+input[type=email] {
+	background-color: white;
+	background-image: url('../img/login_register_icons/email.png');
+	background-position: 7px 3px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	text-align: center;
+	border-radius: 20px;
+	border-width: 1px;
+	
+	margin: 10px;
+	border-style: solid;
+	border-color: black;
+	font-family: 'PP_Mori_medium';
+	font-size: 12px;
+	height: 30px;
+}
+
+.group-form {
+	margin: auto;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding-bottom:10px;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.blackBackground {
+	color: black;
+ 	height: 4%;
+    background-color: black;
+}
+.welcome-title {
+	font-family: 'PP_Mori_medium';
+	font-size: 12px;
+}
+.otherPages {
+	font-family: 'PP_Mori_medium';
+	font-size: 10px;
+}
+.otherChange {
+	color: #fa2742;
+}
+.otherChange:hover {
+	color: #fa2742;
+}
+#error {
+	color: #fa2742;
+	display: none;
+}
+#errorUser {
+	color: #fa2742;
+	display: none;
+}
+#notActive {
+	color: #fa2742;
+	display: none;
+}
+#passNotMatch {
+	color: #fa2742;
+	display: none;
+}
+#errorPassIncorrect {
+	color: #fa2742;
+	display: none;
+}
+#errorPassNotMatch {
+	color: #fa2742;
+	display: none;
+}
+#patternTitle {
+	color: #fa2742;
+	display: none;
+}
+#errorEmailIncorrect {
+	color: #fa2742;
+	display: none;
+}
+#patternTitleEmail {
+	color: #fa2742;
+	display: none;
+}
+#errorAvatar {
+	color: #fa2742;
+}
+#banned {
+	color: #fa2742;
+	display: none;
+}
+
+  /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+ 	input[type=text] {
+		width: 56%;
+	}
+	input[type=password] {
+		width: 56%;
+	}
+	input[type=email] {
+		width: 56%;
+	}
+	.group-form {
+		width: 46%;
+	}
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+	input[type=text] {
+		width: 56%;
+	}
+	input[type=password] {
+		width: 56%;
+	}
+	input[type=email] {
+		width: 56%;
+	}
+	.group-form {
+		width: 46%;
+	}
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+	input[type=text] {
+		width: 46%;
+	}
+	input[type=password] {
+		width: 46%;
+	}
+	input[type=email] {
+		width: 46%;
+	}
+	.group-form {
+		width: 40%;
+	}
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+	input[type=text] {
+		width: 36%;
+	}
+	input[type=password] {
+		width: 36%;
+	}
+	input[type=email] {
+		width: 36%;
+	}
+	.group-form {
+		width: 50%;
+	}
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+	input[type=text] {
+		width: 26%;
+	}
+	input[type=password] {
+		width: 26%;
+	}
+	input[type=email] {
+		width: 26%;
+	}
+	.group-form {
+		width: 50%;
+	}
+}

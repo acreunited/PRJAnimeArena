@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2022 rel. 2 (x64) (http://www.altova.com) by Pedro Dias (ISEL) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation=""/>
+	<xs:element name="target">
+		<xs:simpleType>
+			<xs:list itemType="activeType"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="becomeInvulnerable" type="xs:nonNegativeInteger"/>
+	<xs:element name="cooldown" type="xs:nonNegativeInteger"/>
+	<xs:element name="number" type="minMax"/>
+	<xs:element name="duration" type="xs:nonNegativeInteger"/>
+	<xs:element name="damageIncreasePerUse" type="minMax"/>
+	<xs:element name="healIncreasePerUse" type="minMax"/>
+	<xs:element name="extraDamage" type="minMax"/>
+	<xs:element name="hpLost" type="minMax"/>
+	<xs:element name="taijutsu" type="xs:nonNegativeInteger"/>
+	<xs:element name="heart" type="xs:nonNegativeInteger"/>
+	<xs:element name="energy" type="xs:nonNegativeInteger"/>
+	<xs:element name="spirit" type="xs:nonNegativeInteger"/>
+	<xs:element name="random" type="xs:nonNegativeInteger"/>
+	<xs:element name="stunDuration" type="xs:nonNegativeInteger"/>
+	<xs:element name="targetClick" type="clickType"/>
+	<xs:element name="abilities">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ability" minOccurs="12" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="name">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="32"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="description">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="5000"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="nature">
+								<xs:annotation>
+									<xs:documentation>custo da habilidade</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="taijutsu"/>
+										<xs:element ref="heart"/>
+										<xs:element ref="energy"/>
+										<xs:element ref="spirit"/>
+										<xs:element ref="random"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element ref="targetClick">
+								<xs:annotation>
+									<xs:documentation>alvo da habilidade</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element ref="cooldown"/>
+							<xs:element name="active" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>interfere em turnos futuros</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="target"/>
+										<xs:element name="text" type="xs:string"/>
+										<xs:element name="duration" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="damage" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>faz dano</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="number">
+											<xs:annotation>
+												<xs:documentation/>
+												<xs:documentation/>
+											</xs:annotation>
+										</xs:element>
+										<xs:element ref="duration"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="temporaryDamageIncrease" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>aumenta dano de uma ou todas as habilidades temporariamente</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="extraDamage"/>
+										<xs:element ref="duration"/>
+										<xs:element ref="target"/>
+										<xs:element name="whichAbilities">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:pattern value="all|current"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="permanentDamageIncrease" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>aumenta dano da personagem permanentemente</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="number"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="moreDamageEnemyHPLost" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>faz mais dano consoante a vida do alvo</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="extraDamage"/>
+										<xs:element ref="hpLost"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="moreDamagePerHPLost" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>faz mais dano consoante a vida da própria personagem</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="extraDamage"/>
+										<xs:element ref="hpLost"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element ref="damageIncreasePerUse" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>aumenta dano por uso</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element ref="healIncreasePerUse" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>aumenta regeneração por uso</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="gainHP" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>regenera vida</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="number"/>
+										<xs:element ref="duration"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="gainDR" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>reduz dano</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="number"/>
+										<xs:element ref="duration"/>
+										<xs:element ref="target"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="gainNature" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>ganha naturezas</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="number"/>
+										<xs:element ref="duration"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="removeNature" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>remove naturezas</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="number"/>
+										<xs:element ref="duration"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element ref="stunDuration" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>paralisa alvo</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element ref="becomeInvulnerable" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>torna alvo invulnerável</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ignoresInvulnerability" type="xs:boolean" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation>ignora invulnerabilidade</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:all>
+						<xs:attribute name="abilityID" type="xs:unsignedByte" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="clickType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="self"/>
+			<xs:enumeration value="enemy"/>
+			<xs:enumeration value="allEnemies"/>
+			<xs:enumeration value="ally"/>
+			<xs:enumeration value="allyORself"/>
+			<xs:enumeration value="allTeam"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="minMax">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="activeType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="self"/>
+			<xs:enumeration value="enemy"/>
+			<xs:enumeration value="ally"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

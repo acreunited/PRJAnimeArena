@@ -1,0 +1,34 @@
+#red {color:red;}
+#blue {color:blue;}
+#green {color:green;}
+#yellow {color:yellow}
+#purple {color:purple;}
+#pink {color:pink;}
+#orange {color:orange;}
+
+a {
+	text-decoration:none;
+}
+/*
+.title-color-red {
+	
+    font-size: 16px; 
+    color: #0e0e0f;
+    background-color: red; 
+    margin: auto;
+    width:max-content; 
+    padding:2px 10px;
+    display: inline-block;
+}*/
+
+button {
+	font-family: 'PP_Mori_Semibold';
+	background-color: #fa2742;
+	border: none;
+	border-radius: 20px;
+	font-size: 14px;
+	font-color: #0e0e0f;
+	width:max-content; 
+    padding:2px 10px;
+    margin-bottom:10px;
+}

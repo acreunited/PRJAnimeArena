@@ -1,0 +1,1914 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<abilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Users/pncdi/Desktop/hmmm.xsd">
+	<ability abilityID="0">
+		<name>Linear</name>
+		<description>
+			Asuna Yuuki deals 20 damage to one enemy. For 1 turn,
+			her abilities will deal an additional 5 damage.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character will deal 5 additional damage with its skills</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<temporaryDamageIncrease>
+			<extraDamage>5</extraDamage>
+			<duration>1</duration>
+			<target>self</target>
+			<whichAbilities>all</whichAbilities>
+		</temporaryDamageIncrease>
+	</ability>
+	<ability abilityID="1">
+		<name>Rapier Repel</name>
+		<description>For 2 turns, Asuna Yuuki will deal 15 damage to one
+			enemy.</description>
+		<active>
+			<target>enemy</target>
+			<text>This character will take 15 damage</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>3</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>15</number>
+			<duration>2</duration>
+		</damage>
+	</ability>
+	<ability abilityID="2">
+		<name>Serene Shooting Star</name>
+		<description>Asuna Yuuki deals 30 damage to one enemy. This skills
+			ignores invulnerability.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>30</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>true</ignoresInvulnerability>
+	</ability>
+	<ability abilityID="3">
+		<name>Asuna Dodge</name>
+		<description>This skill makes Asuna Yuuki invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="4">
+		<name>Cyborg Kick</name>
+		<description>Genos deals 15 damage to one enemy and stuns them for 1
+			turn.</description>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>15</number>
+			<duration>1</duration>
+		</damage>
+		<stunDuration>1</stunDuration>
+	</ability>
+	<ability abilityID="5">
+		<name>Incineration Cannon</name>
+		<description>Genos targets an enemy, dealing 20 damage and removing 1
+			random nature from them.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<removeNature>
+			<number>1</number>
+			<duration>1</duration>
+		</removeNature>
+	</ability>
+	<ability abilityID="6">
+		<name>Gauge Incineration Cannon</name>
+		<description>Genos deals 30 damage to all enemies.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>2</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>allEnemies</targetClick>
+		<damage>
+			<number>30</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="7">
+		<name>Hyper Sensors</name>
+		<description>This skill makes Genos invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="8">
+		<name>Nen Kick</name>
+		<description>Gon Freecss deals 20 damage to one enemy.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="9">
+		<name>Paper</name>
+		<description>Gon Freecss deals 20 damage to all enemies.</description>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>allEnemies</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="10">
+		<name>Rock</name>
+		<description>Gon Freecss deals 30 damage to one enemy.</description>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>30</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="11">
+		<name>Gon Block</name>
+		<description>This skill makes Gon Freecss invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="12">
+		<name>Lightning Palm</name>
+		<description>Killua Zoldyck deals 20 damage to all enemies.
+		</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>allEnemies</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="13">
+		<name>Lightning Charge</name>
+		<description>This skill deals 20 damage to one enemy that ignores
+			invulnerability.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>true</ignoresInvulnerability>
+	</ability>
+	<ability abilityID="14">
+		<name>Whirlwind</name>
+		<description>Killua Zoldyck deals 50 damage to one enemy.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>50</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="15">
+		<name>Rhythm Echo</name>
+		<description>This skill makes Killua Zoldyck invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="16">
+		<name>Emission Nen Punch</name>
+		<description>This skill deals 25 damage to one enemy.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="17">
+		<name>Healing Case</name>
+		<description>Leorio heals an ally 20 health.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>ally</targetClick>
+		<gainHP>
+			<number>20</number>
+			<duration>1</duration>
+		</gainHP>
+	</ability>
+	<ability abilityID="18">
+		<name>Remote Punch</name>
+		<description>Leorio deals 25 damage to one enemy and an additional 10
+			damage for each 25 health Leorio has lost.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+		<moreDamagePerHPLost>
+			<extraDamage>10</extraDamage>
+			<hpLost>25</hpLost>
+		</moreDamagePerHPLost>
+	</ability>
+	<ability abilityID="19">
+		<name>Leorio Jump</name>
+		<description>This skill makes Leorio Paradinight invulnerable for 1
+			turn.</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="20">
+		<name>Zangetsu Slash</name>
+		<description>Kurasaki Ichigo deals 20 damage to one enemy. This skill
+			will deal 5 more damage each time it is used.</description>
+		<active>
+			<target>self</target>
+			<text>This character´s skill will deal 5 more damage</text>
+			<duration>permanent</duration>
+		</active>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<damageIncreasePerUse>5</damageIncreasePerUse>
+	</ability>
+	<ability abilityID="21">
+		<name>Getsuga Tenshou</name>
+		<description>Kurasaki Ichigo deals 40 damage to one enemy and stuns
+			him for 1 turn.</description>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>40</number>
+			<duration>1</duration>
+		</damage>
+		<stunDuration>1</stunDuration>
+	</ability>
+	<ability abilityID="22">
+		<name>Zangetsu Fusion</name>
+		<description>This skill makes Kurasaki Ichigo gain 1 random nature.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character will gain 1 random nature.</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>self</targetClick>
+		<gainNature>
+			<number>1</number>
+			<duration>1</duration>
+		</gainNature>
+	</ability>
+	<ability abilityID="23">
+		<name>Zangetsu Defense</name>
+		<description>This skill makes Kurasaki Ichigo invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="24">
+		<name>Cutting Shield</name>
+		<description>Inoue Orihime deals 15 damage to one enemy. For 1 turn, she will gain 20 points of damage reduction.</description>
+		<active>
+			<target>self</target>
+			<text>This character has 20 points of damage reduction</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>15</number>
+			<duration>1</duration>
+		</damage>
+		<gainDR>
+			<number>20</number>
+			<duration>1</duration>
+			<target>self</target>
+		</gainDR>
+	</ability>
+	<ability abilityID="25">
+		<name>Return Shield</name>
+		<description>For 2 turns, Inoue Orihime heals one ally for 20 health.
+		</description>
+		<active>
+			<target>ally</target>
+			<text>This character will heal 20 health</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>2</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>ally</targetClick>
+		<gainHP>
+			<number>20</number>
+			<duration>2</duration>
+		</gainHP>
+	</ability>
+	<ability abilityID="26">
+		<name>Shielding Flowers</name>
+		<description>Inoue Orihime heals her entire team for 10 health. This skill will heal an aditional 5 health each time its used.</description>
+		<active>
+			<target>self</target>
+			<text>This ability heals an aditional 5 health.</text>
+			<duration>permanent</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>2</random>
+		</nature>
+		<cooldown>3</cooldown>
+		<targetClick>allTeam</targetClick>
+		<healIncreasePerUse>5</healIncreasePerUse>
+		<gainHP>
+			<number>10</number>
+			<duration>1</duration>
+		</gainHP>
+	</ability>
+	<ability abilityID="27">
+		<name>Links Shield</name>
+		<description>This skill makes Inoue Orihime invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="28">
+		<name>Kojaku Shot</name>
+		<description>Uryu Ishida fires an arrow from his bow, dealing 20
+			damage to one enemy for 2 turns.</description>
+		<active>
+			<target>enemy</target>
+			<text>This character will take 20 damage</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>2</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>2</duration>
+		</damage>
+	</ability>
+	<ability abilityID="29">
+		<name>Reiatsu Chain Shot</name>
+		<description>Uryu Ishida shoots the reiatsu chain of one enemy,
+			dealing 30 damage that ignores invulnerability.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>30</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>true</ignoresInvulnerability>
+	</ability>
+	<ability abilityID="30">
+		<name>Kojaku Preparation</name>
+		<description>Uryu Ishida prepares himself for his next attack gaining
+			1 random nature.</description>
+		<active>
+			<target>self</target>
+			<text>This character will gain 1 random nature</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>3</cooldown>
+		<targetClick>self</targetClick>
+		<gainNature>
+			<number>1</number>
+			<duration>1</duration>
+		</gainNature>
+	</ability>
+	<ability abilityID="31">
+		<name>Uryu Evasion</name>
+		<description>This skill makes Uryu Ishida invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="32">
+		<name>Sixth Form Whirlpool</name>
+		<description>Tanjiro Kamado deals 20 damage and stuns one enemy for 1
+			turn.</description>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<stunDuration>1</stunDuration>
+	</ability>
+	<ability abilityID="33">
+		<name>Hinokami Kagura Dance</name>
+		<description>Tanjiro Kamado deals 35 damage to one enemy.
+		</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>35</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="34">
+		<name>Rage</name>
+		<description>Tanjiro Kamado takes 10 damage and makes his skills will deal 10 additional damage permanently.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character deals 10 more damage with his skills</text>
+			<duration>permanent</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>3</cooldown>
+		<targetClick>self</targetClick>
+		<damage>
+			<number>10</number>
+			<duration>1</duration>
+		</damage>
+		<permanentDamageIncrease>
+			<number>10</number>
+		</permanentDamageIncrease>
+	</ability>
+	<ability abilityID="35">
+		<name>Sword Block</name>
+		<description>This skill makes Tanjiro Kamado invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="36">
+		<name>Exploding Blood</name>
+		<description>Nezuko Kamado deals 20 damage to one enemy. This skill will deal 5 extra damage for each 15 health the enemy has lost.
+		</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<moreDamageEnemyHPLost>
+			<extraDamage>5</extraDamage>
+			<hpLost>15</hpLost>
+		</moreDamageEnemyHPLost>
+	</ability>
+	<ability abilityID="37">
+		<name>Healing</name>
+		<description>Nezuko Kamado heals one ally or herself for 25 health.
+		</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>allyORself</targetClick>
+		<gainHP>
+			<number>25</number>
+			<duration>1</duration>
+		</gainHP>
+	</ability>
+	<ability abilityID="38">
+		<name>Protect</name>
+		<description>Nezuko Kamado protects on ally for 1 turn making them
+			invulnerable. </description>
+		<active>
+			<target>ally</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>ally</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="39">
+		<name>Hiding</name>
+		<description>This skill makes Nezuko Kamado invulnerable for 1 turn.
+		</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="40">
+		<name>Thunderclap and Flash</name>
+		<description>Zenitsu Agatsuma launches a fast attack dealing 25 damage
+			to one enemy.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+	</ability>
+	<ability abilityID="41">
+		<name>Eightfold</name>
+		<description>Zenitsu Agatsuma deals 40 damage that ignores
+			invulnerability to one enemy.</description>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>40</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>true</ignoresInvulnerability>
+	</ability>
+	<ability abilityID="42">
+		<name>Stance</name>
+		<description>For 2 turns, Zenitsu Agatsuma will gain 1 random nature.</description>
+		<active>
+			<target>self</target>
+			<text>This character will gain 1 random nature</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>2</random>
+		</nature>
+		<cooldown>3</cooldown>
+		<targetClick>self</targetClick>
+		<gainNature>
+			<number>1</number>
+			<duration>2</duration>
+		</gainNature>
+	</ability>
+	<ability abilityID="43">
+		<name>Sword Block</name>
+		<description>This skill makes Zenitsu Agatsuma invulnerable for 1
+			turn.</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<becomeInvulnerable>1</becomeInvulnerable>
+	</ability>
+	<ability abilityID="45">
+		<name>Red Fire Cannon</name>
+		<description>Kushiki Rukia deals 20 damage to one enemy and removes 1 random nature him.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<removeNature>
+			<number>1</number>
+			<duration>1</duration>
+		</removeNature>
+	</ability>
+	<ability abilityID="46">
+		<name>Blue Fire Crash Down</name>
+		<description>Kushiki Rukia deals 35 damage to one enemy and stuns him for 1 turn.</description>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>35</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>1</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="47">
+		<name>Spirit Glove</name>
+		<description>In the next turn, Kushiki Rukia will deal 10 additional damage with her skills.</description>
+		<active>
+			<target>self</target>
+			<text>This character will deal 10 additional damage with her skills</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<temporaryDamageIncrease>
+			<extraDamage>10</extraDamage>
+			<duration>1</duration>
+			<target>self</target>
+			<whichAbilities>all</whichAbilities>
+		</temporaryDamageIncrease>
+	</ability>
+	<ability abilityID="48">
+		<name>Rukia Hide</name>
+		<description>This skill makes Kushiki Rukia invulnerable for 1 turn.</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="49">
+		<name>Dowsing Chain</name>
+		<description>Kurapika targets an enemy, making him receive 25 damage.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>1</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="50">
+		<name>Holy Chain</name>
+		<description>Kurapika heals himself or an ally for 25 health.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>1</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>allyORself</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<gainHP>
+			<number>25</number>
+			<duration>1</duration>
+		</gainHP>
+	</ability>
+	<ability abilityID="51">
+		<name>Judgment Chain</name>
+		<description>Kurapika locks the heart of an enemy and removes 2 random nature from him. That character will take 25 damage and be stunned for 1 turn.
+</description>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned.</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>3</random>
+		</nature>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+		<cooldown>3</cooldown>
+		<targetClick>enemy</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>1</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<removeNature>
+			<number>2</number>
+			<duration>1</duration>
+		</removeNature>
+	</ability>
+	<ability abilityID="52">
+		<name>Kurapika Block</name>
+		<description>This skill makes Kurapika invulnerable for 1 turn.</description>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="69">
+		<name>Perma Stick</name>
+		<description>Hisoka deals 0 damage to an enemy. This skill deals 5 extra damage each time its used and an additional 5 damage for each 25 health the target has lost.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>0</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>5</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<moreDamageEnemyHPLost>
+			<extraDamage>5</extraDamage>
+			<hpLost>25</hpLost>
+		</moreDamageEnemyHPLost>
+		<active>
+			<target>self</target>
+			<text>This skill will deal 5 more damage.</text>
+			<duration>permanent</duration>
+		</active>
+	</ability>
+	<ability abilityID="70">
+		<name>Elastic Cards</name>
+		<description>Hisoka deals 20 admage to one enemy and removes 1 random nature from them.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<removeNature>
+			<number>1</number>
+			<duration>1</duration>
+		</removeNature>
+	</ability>
+	<ability abilityID="71">
+		<name>Bungee Assassination</name>
+		<description>Hisoka targets an enemy dealing 30 damage and an additional 10 damage for each 20 health the target has lost. This skill ignores invulnerability.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>30</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>true</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<moreDamageEnemyHPLost>
+			<extraDamage>10</extraDamage>
+			<hpLost>20</hpLost>
+		</moreDamageEnemyHPLost>
+	</ability>
+	<ability abilityID="72">
+		<name>Sword Skirmish</name>
+		<description>This skill makes Morow Hisoka invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="81">
+		<name>Head Smash</name>
+		<description>Nelliel deals 25 damage to one enemy and stuns him for 1 turn.</description>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>1</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>5</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="82">
+		<name>Salivate Healing</name>
+		<description>Nelliel heals one ally for 15 health. This skill will heal 5 additional health for each use.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>ally</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>5</healIncreasePerUse>
+		<gainHP>
+			<number>15</number>
+			<duration>1</duration>
+		</gainHP>
+		<active>
+			<target>self</target>
+			<text>This ability will heal 5 additional health.</text>
+			<duration>permanent</duration>
+		</active>
+	</ability>
+	<ability abilityID="83">
+		<name>Return Cero</name>
+		<description>Nelliel protects an ally making him invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>ally</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>ally</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="84">
+		<name>Cower</name>
+		<description>This skill makes Child Nelliel invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable1</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="97">
+		<name>Reiatsu Hook</name>
+		<description>Sado deals 15 damage to one enemy and stuns him for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>15</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>1</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="98">
+		<name>Arm Cannon</name>
+		<description>Sado deals 20 damage to one enemy. Next turn, his abilities will deal an additional 5 damage.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<temporaryDamageIncrease>
+			<extraDamage>5</extraDamage>
+			<duration>1</duration>
+			<target>self</target>
+			<whichAbilities>all</whichAbilities>
+		</temporaryDamageIncrease>
+		<active>
+			<target>self</target>
+			<text>This character will deal 5 additional damage with his skills.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="99">
+		<name>Full Release</name>
+		<description>Sado deals 15 damage to all enemies.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>allEnemies</targetClick>
+		<damage>
+			<number>15</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="100">
+		<name>Everlasting Vigor</name>
+		<description>This skill makes Sado invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="101">
+		<name>Scatter Senbonzakura</name>
+		<description>Byakuya deals 20 damage to one enemy and removes 1 random nature from him.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>20</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<removeNature>
+			<number>1</number>
+			<duration>1</duration>
+		</removeNature>
+	</ability>
+	<ability abilityID="102">
+		<name>Bankai Senbonzakura</name>
+		<description>Byakuya unleashes his bankai dealing 25 damage to all enemies.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>allEnemies</targetClick>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="103">
+		<name>Execution</name>
+		<description>Byakuya deals 50 damage to one enemy that ignores invulnerability.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>1</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>50</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>true</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="104">
+		<name>Flash Step</name>
+		<description>This skill makes Byakuya invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="105">
+		<name>Beast Fangs</name>
+		<description>Inosuke goes wild against the enemy team dealing 10 damage to them.</description>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>allEnemies</targetClick>
+		<damage>
+			<number>10</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="106">
+		<name>Beast Strike</name>
+		<description>Inosuke launches a fierce attack into an enemy dealing 25 damage to him.</description>
+		<nature>
+			<taijutsu>1</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="107">
+		<name>Fury</name>
+		<description>Inosuke´s fury raises, making his abilities deal 5 additional damage permanently.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<active>
+			<target>self</target>
+			<text>Inosuke has 1 fury.</text>
+			<duration>permanent</duration>
+		</active>
+		<cooldown>1</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<permanentDamageIncrease>
+			<number>5</number>
+		</permanentDamageIncrease>
+	</ability>
+	<ability abilityID="108">
+		<name>Inosuke Guard</name>
+		<description>This skill makes Inosuke invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="109">
+		<name>Predator</name>
+		<description>Demon Form Nezuko preys on an enemy dealing 15 damage to him for 2 turns.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>15</number>
+			<duration>2</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>enemy</target>
+			<text>This character will take 15 damage.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="110">
+		<name>Kick</name>
+		<description>Demon Form Nezuko kicks an enemy dealing 30 damage to him.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>30</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="111">
+		<name>Demon Regeneration</name>
+		<description>Demon Form Nezuko heals all her injuries and regenerates all her missing health back.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>5</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<gainHP>
+			<number>100</number>
+			<duration>1</duration>
+		</gainHP>
+	</ability>
+	<ability abilityID="112">
+		<name>Nezuko Energy Block</name>
+		<description>This skill makes Demon Form Nezuko invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="113">
+		<name>Burning Ground</name>
+		<description>Yamamoto fills the battlefield in flames, making the entire team receive 25 damage.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>allEnemies</targetClick>
+		<damage>
+			<number>25</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="114">
+		<name>Flames Of Hell</name>
+		<description>Yamamoto surrounds an enemy in flames dealing 40 damage and stunning him for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>1</energy>
+			<spirit>0</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>40</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>1</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="115">
+		<name>Fire Blade</name>
+		<description>Yamamoto empowers his sword with fire and deals 35 damage to one enemy.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>1</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>35</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="116">
+		<name>Yamamoto Block</name>
+		<description>This skill makes Yamamoto invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="117">
+		<name>Chaos</name>
+		<description>Daki fills out the battlefield with her ability dealing 15 damage to all enemies.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>1</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>0</cooldown>
+		<targetClick>allEnemies</targetClick>
+		<damage>
+			<number>15</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+	</ability>
+	<ability abilityID="118">
+		<name>Fierce Lock</name>
+		<description>Daki fiercly attacks an enemy dealing 30 damage and stunning him for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>1</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>1</cooldown>
+		<targetClick>enemy</targetClick>
+		<damage>
+			<number>30</number>
+			<duration>1</duration>
+		</damage>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>1</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>enemy</target>
+			<text>This character is stunned.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="119">
+		<name>Demon Hardness</name>
+		<description>Daki heals herself for 15 health, gains 1 random nature and makes her skills deal 10 more damage for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>1</spirit>
+			<random>0</random>
+		</nature>
+		<cooldown>2</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>0</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<gainNature>
+			<number>1</number>
+			<duration>1</duration>
+		</gainNature>
+		<gainHP>
+			<number>15</number>
+			<duration>1</duration>
+		</gainHP>
+		<temporaryDamageIncrease>
+			<extraDamage>10</extraDamage>
+			<duration>1</duration>
+			<target>self</target>
+			<whichAbilities>all</whichAbilities>
+		</temporaryDamageIncrease>
+		<active>
+			<target>self</target>
+			<text>This character deals 10 more damage with her skills.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+	<ability abilityID="120">
+		<name>Demon Protection</name>
+		<description>This skill makes Daki invulnerable for 1 turn.</description>
+		<nature>
+			<taijutsu>0</taijutsu>
+			<heart>0</heart>
+			<energy>0</energy>
+			<spirit>0</spirit>
+			<random>1</random>
+		</nature>
+		<cooldown>4</cooldown>
+		<targetClick>self</targetClick>
+		<ignoresInvulnerability>false</ignoresInvulnerability>
+		<stunDuration>0</stunDuration>
+		<becomeInvulnerable>1</becomeInvulnerable>
+		<damageIncreasePerUse>0</damageIncreasePerUse>
+		<healIncreasePerUse>0</healIncreasePerUse>
+		<active>
+			<target>self</target>
+			<text>This character is invulnerable.</text>
+			<duration>1</duration>
+		</active>
+	</ability>
+</abilities>

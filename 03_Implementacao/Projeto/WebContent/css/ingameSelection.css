@@ -1,0 +1,568 @@
+@font-face {
+    font-family: 'uni_sansbold_italic';
+    src: url('../fonts/Uni Sans Bold Italic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'uni_sanslight';
+    src: url('../fonts/Uni Sans Light.otf') format('woff2');
+    src: url('../fonts/Uni Sans Light.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'uni_sansregular';
+    src: url('../fonts/Uni Sans Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'uni_sanssemibold';
+    src: url('../fonts/Uni Sans SemiBold.otf') format('woff2'),
+         url('../fonts/Uni Sans SemiBold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#app {
+    display: flex
+}
+
+#root {
+    height: 560px;
+    width: 770px
+}
+* {
+	margin: 0;
+}
+
+.mc_custom,
+.mold {
+    position: absolute
+}
+
+.mc_custom {
+    height: 560px;
+    width: 770px
+}
+.mc_custom {
+   /* clip: rect(0, 770px, 560px, 0);*/
+    height: 560px;
+    position: absolute;
+    width: 770px
+}
+
+.mc_custom_bg {
+
+    position: absolute
+}
+
+.menu {
+   
+    height: 30px;
+    left: -68px;
+    position: absolute;
+    top: 240px;
+    width: 1000px
+    
+}
+.menu ul li {
+    display: inline;
+    
+}
+
+.rodape {
+   
+    background-image: url(../selection/Character_Background.png);
+    height: 233px;
+    left: 4px;
+    position: absolute;
+    top: 315px;
+    width: 765px;
+}
+
+.rodape ul {
+    display: flex;
+    flex-wrap: wrap;
+    left: 15px;
+    position: absolute;
+    top: 17px;
+    width: 430px
+}
+
+.rodape ul li {
+	
+    list-style: none;
+    margin-bottom: 8px;
+    margin-right: 10px
+}
+
+.personagem_fundo {
+    background-color: #e1d6b2;
+    height: 48px;
+    width: 48px;
+    
+}
+.borda {
+    outline-style: solid ;
+	outline-color: #000000;
+	outline-width: 1px;
+}
+.personagem {
+    height: 48px;
+    width: 48px;
+   
+}  
+/*
+li img {
+	opacity: 0.5;
+}*/
+
+.perfil {
+    left: 520px;
+    top: 32px
+}
+
+.perfil,
+.texto {
+    position: absolute;  
+}
+
+.texto {
+    font-size: 10pt;
+    left: 89px;
+    line-height: 16px;
+    top: -5px;
+    width: 110px;
+    font-family: "uni_sanslight";
+    color: #ececec;
+}  
+ 
+.texto span {
+	font-family: "uni_sansregular";
+}
+
+.avatar {
+    height: 75px;
+    width: 75px;
+    outline-style: solid ;
+	outline-color: #000000;
+	outline-width: 1px;
+}
+
+.mold {
+    margin-left: -86px;
+    margin-top: -9px;
+    width: 94px
+}
+
+.selecionados {
+    left: 452px;
+    position: absolute;
+    top: 118px;
+}
+
+.selectedsnum {
+    display: flex;
+    height: 48px;
+    left: 68px;
+    position: absolute;
+    top: 25px;
+    width: 200px;
+}
+
+.selectedsnum div {
+    align-items: center;
+    background-color: #e1d6b2;
+    border: 1px solid #000;
+    display: flex;
+    font-size: 40px;
+    height: 48px;
+    justify-content: center;
+    margin-right: 11px;
+    width: 48px;
+}
+
+.containers {
+    display: inline-block;
+    left: 29px;
+    position: absolute;
+    top: 25px;
+    width: 200px;
+}
+.items {
+    background-size: 48px;
+    float: left;
+    height: 48px;
+    left: 40px;
+    margin-right: 13px;
+    position: relative;
+    top: 1px;
+    width: 48px;
+}
+
+/*CHARACTER DETAILS*/
+.conteudo, .topo {
+    position: absolute;
+
+}
+.topo {
+   /* clip: rect(0,545px,222px,0);*/
+    background-image: url(../selection/animeselectcharviewbackground.png);
+    height: 233px;
+    left: 40px;
+    top: 24px;
+    width: 698px;
+     z-index: 1;
+}/*
+.topoa, .topoaend {
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+}
+.topoa {
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: clipa;
+    animation-name: clipa;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}*/
+
+.conteudo {
+    left: 87px;
+    top: 13px;
+}
+.conteudo, .topo {
+    position: absolute;
+}
+.nome {
+    color: #b91921;
+    font-size: 14pt;
+    left: 0px;
+    top: 10px;
+    position: absolute;
+    width: 498px;
+    color: #ececec;
+    font-family: "uni_sanssemibold";
+}
+.foto, .fotolista {
+    height: 75px;
+    width: 75px;
+}
+.foto {
+    position: absolute;
+    top: 32px;
+}
+.borda {
+    outline-style: solid ;
+	outline-color: #000000;
+	outline-width: 1px;
+}
+.desc, .nomeskill {
+    position: absolute;
+}
+.nomeskill {
+    color: #b91921;
+    font-size: 12pt;
+    left: 1px;
+    top: 118px;
+    width: 295px;
+    color: #ff1d20;
+    font-family: "uni_sanssemibold";
+}
+.desc, .nomeEnergy {
+    position: absolute;
+}
+.nomeEnergy {
+    color: #b91921;
+    font-size: 12pt;
+    left: 300px;
+    top: 118px;
+    width: 295px;
+    color: #ececec;
+    font-family: "uni_sanssemibold";
+}
+.ability_info_energy_img {
+    left: 65px;
+    position: absolute;
+    top: 0px;
+}
+.desc, .cooldown {
+    position: absolute;
+}
+.cooldown {
+    color: #b91921;
+    font-size: 8pt;
+    left: 325px;
+    top: 195px;
+    width: 295px;
+    color: #ff1d20;
+    font-family: "uni_sanssemibold";
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #000000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff1d20; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1d20; 
+}
+.desc {
+    font-size: 11pt;
+    height: 59px;
+    left: 1px;
+    overflow-y: auto;
+    scrollbar-color: #fff #8c8c8cbf;
+    scrollbar-width: thin;
+    top: 133px;
+    width: 415px;
+    color: #ececec;
+    font-family: "uni_sanslight";
+    
+}
+.desc, .nomeskill {
+    position: absolute;
+}
+.fotoskill {
+    height: 75px;
+    left: 434px;
+    position: absolute;
+    top: 125px;
+    width: 75px;
+}
+.borda {
+    outline-style: solid ;
+	outline-color: #000000;
+	outline-width: 1px;
+}
+nav {
+    display: block;
+}
+.listaskills {
+    display: flex;
+    left: 233px;
+    overflow-x: auto;
+    position: absolute;
+    scrollbar-color: #fff #8c8c8cbf;
+    scrollbar-width: thin;
+    top: 29px;
+    width: 380px;
+}
+.listaskills li {
+    left: -39px;
+    list-style: none;
+    margin-right: 18px;
+    position: relative;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+
+
+/*Searching Opp*/
+.holders{
+    background-image:url(../selection/StartPrivateBackground.png);
+    height:233px;
+    left:203px;
+    position:absolute;
+    top:139px;
+    width:434px;
+    z-index:999;
+}
+.holders img{
+    border:1px solid #000;
+    left:120px;
+    position:absolute;
+    top:70px;
+}
+.holdanimes{
+    -webkit-animation-duration:.2s;
+    animation-duration:.2s;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-name:hold;
+    animation-name:hold;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear
+}
+/*
+@-webkit-keyframes hold{
+    0%{
+        transform:scale(.5);
+        will-change:transform
+    }
+    to{
+        transform:scale(1);
+        will-change:transform
+    }
+}
+@keyframes hold{
+    0%{
+        transform:scale(.5);
+        will-change:transform
+    }
+    to{
+        transform:scale(1);
+        will-change:transform
+    }
+}*/
+.rbattle{
+	font-family: 'uni_sanssemibold';
+    left:58px;
+    top:20px;
+    width:317px;
+    font-size: 18px;
+    color: #ececec;
+    position:absolute;
+    text-align:center;
+}
+
+.lds-hourglass{
+    display:inline-block;
+    height:125px;
+    left:90px;
+    position:absolute;
+    top:50px;
+    width:252px;
+    background-image:url(../selection/newsearch.gif);
+
+}
+.lds-hourglass-found{
+    display:inline-block;
+    height:125px;
+    left:90px;
+    position:absolute;
+    top:50px;
+    width:252px;
+    background-image:url(../selection/newfound.gif);
+
+}
+
+.pbent {
+	font-family: 'uni_sanssemibold';
+	font-size: 18px;
+    color: #ececec;
+    left:58px;
+    top:76px;
+    width:317px;
+    position:absolute;
+    text-align:center;
+}
+
+.pbtext {
+    border: 1px solid #000;
+    position: absolute;
+    text-align: center;
+}
+.pbtext {
+	font-family: 'uni_sanssemibold';
+    font-size: 15px;
+    height: 30px;
+    left: 80px;
+    top: 100px;
+    width: 270px;
+}
+.btnok {
+	content: url(../battle/OKIngame.png);
+    height: 26px;
+    left: 239px;
+    position: absolute;
+    text-align: center;
+    top: 170px;
+    width: 74px;
+    z-index: 1000;
+}
+.btncancel {
+    content: url(../battle/CancelIngame.png);
+    height: 26px;
+    left: 119px;
+    position: absolute;
+    text-align: center;
+    top: 170px;
+    width: 74px;
+    z-index: 1000;
+    
+}
+
+/*
+.lds-hourglass:after{
+    -webkit-animation:lds-hourglass 1.2s infinite;
+    animation:lds-hourglass 1.2s infinite;
+    border-color:#be2911 transparent;
+    border-radius:50%;
+    border-style:solid;
+    border-width:32px;
+    box-sizing:border-box;
+    content:" ";
+    display:block;
+    height:0;
+    margin:8px;
+    width:0
+}
+@-webkit-keyframes lds-hourglass{
+    0%{
+        -webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);
+        animation-timing-function:cubic-bezier(.55,.055,.675,.19);
+        transform:rotate(0)
+    }
+    50%{
+        -webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);
+        animation-timing-function:cubic-bezier(.215,.61,.355,1);
+        transform:rotate(900deg)
+    }
+    to{
+        transform:rotate(5turn)
+    }
+}
+@keyframes lds-hourglass{
+    0%{
+        -webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);
+        animation-timing-function:cubic-bezier(.55,.055,.675,.19);
+        transform:rotate(0)
+    }
+    50%{
+        -webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);
+        animation-timing-function:cubic-bezier(.215,.61,.355,1);
+        transform:rotate(900deg)
+    }
+    to{
+        transform:rotate(5turn)
+    }
+}*/
+
+
+.btncancels{
+	background-image:url(../selection/cancelbutton.png);
+    left:170px;
+    height:32px;
+    top:182px;
+    width:76px;
+    border:1px solid #000;
+    position:absolute;
+    text-align:center;
+}
+

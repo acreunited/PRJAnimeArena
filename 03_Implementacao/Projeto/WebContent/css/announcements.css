@@ -1,0 +1,276 @@
+
+/*Section Play Banner*/
+#play {
+    background-image: url(../img/banner.png);
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+#play img {
+    margin-top: 30px;
+}
+
+#play p {
+    margin-top: 30px;
+    font-family: "PP_Mori_Semibold";
+    size: 10px;
+    color: #e8eae3;
+}
+
+/*Section Annoucements*/
+#annoucementsText {
+    font-family: 'Mono_FeatureBold';
+    font-size: 107px;
+    color: #fa2742;
+    margin-left: -20px;
+    margin-top: 40px;
+}
+
+#imgAnnoucement {
+    max-width: 100%;  
+    height: auto; 
+    margin-top: -65px;
+}
+#imgAnnoucement2 {
+    max-width: 100%;  
+    height: auto; 
+    margin-top: -25px;
+}
+
+.containerAnnoucements {
+    position: relative;
+    text-align: center;
+    color: white;
+   
+}
+
+.annoucementTitle {
+    font-family: 'PP_Mori_bold';
+    font-size: 30px;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    color: #e8eae3;
+}
+.annoucementText {
+    font-family: 'PP_Mori_regular_italic';
+    font-size: 12px;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    color: #e8eae3;
+}
+.annoucementDate {
+    font-family: 'PP_Mori_Semibold';
+    font-size: 12px;
+}
+
+.textAnnInfo {
+	font-family: 'PP_Mori_medium';
+	font-size: 14px;
+	padding: 10px;
+	color: #e8eae3;
+}
+.textAnnInfo img {
+
+	padding-right: 10px;
+}
+
+/*Section Past News*/
+#pastNews {
+    padding-bottom: 150px;
+}
+
+#pastNewsBigText {
+    font-family: 'Mono_FeatureBold';
+    font-size: 72px;
+    color: #fa2742;
+    margin-left: -20px;
+    margin-top: 40px;
+}
+#imgPastNews {
+    max-width: 100%;  
+    height: auto; 
+    margin-top: -45px;
+    
+}
+.pastNewsTitle {
+    font-family: 'PP_Mori_extraBold';
+    font-size: 18px;
+    color: #0e0e0f;
+    margin-top: -10px;
+}
+
+  /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+       #annoucementsText {
+	    font-size: 57px;
+	}
+	
+	#imgAnnoucement {
+	    max-width: 100%;  
+	    height: auto; 
+	    margin-top: -36px;
+	}
+
+	.annoucementTitle {
+	    font-size: 18px;
+	    top: 14px;
+	    left: 10px;
+	}
+	.annoucementText {
+	    font-size: 10px;
+	    top: 46px;
+    	left: 10px;
+	}
+	.annoucementDate {
+	    font-size: 10px;
+	}
+	
+	#pastNewsBigText {
+	    font-size: 42px;
+	    margin-left: -20px;
+	    margin-top: 40px;
+	}
+	#imgPastNews {
+	    max-width: 100%; 
+	    margin-top: -24px;
+	    
+	}
+	.pastNewsTitle {
+	    font-size: 12px;
+	}
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+	
+   #annoucementsText {
+	    font-size: 67px;
+	}
+	
+	#imgAnnoucement {
+	    max-width: 100%;  
+	    height: auto; 
+	    margin-top: -44px;
+	}
+
+	.annoucementTitle {
+	    font-size: 24px;
+	    top: 28px;
+	    left: 10px;
+	}
+	.annoucementText {
+	    font-size: 10px;
+	    top: 70px;
+    	left: 10px;
+	}
+	.annoucementDate {
+	    font-size: 12px;
+	}
+	
+	#pastNewsBigText {
+	    font-size: 52px;
+	    margin-left: -20px;
+	    margin-top: 40px;
+	}
+	#imgPastNews {
+	    max-width: 100%; 
+	    margin-top: -30px;
+	    
+	}
+	.pastNewsTitle {
+	    font-size: 14px;
+	}
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+ 	#annoucementsText {
+	    font-size: 87px;
+	}
+	
+	#imgAnnoucement {
+	    max-width: 100%;  
+	    height: auto; 
+	    margin-top: -50px;
+	}
+
+	.annoucementTitle {
+	    font-size: 28px;
+	    top: 48px;
+	    left: 10px;
+	}
+	.annoucementText {
+	    font-size: 12px;
+	    top: 100px;
+    	left: 10px;
+	}
+	.annoucementDate {
+	    font-size: 12px;
+	}
+	
+	#pastNewsBigText {
+	    font-size: 62px;
+	    margin-left: -20px;
+	    margin-top: 40px;
+	}
+	#imgPastNews {
+	    max-width: 100%; 
+	    margin-top: -35px;
+	    
+	}
+	.pastNewsTitle {
+	    font-size: 16px;
+	}
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+	#annoucementsText {
+	    font-size: 107px;
+	}
+	
+	#imgAnnoucement {
+	    max-width: 100%;  
+	    height: auto; 
+	    margin-top: -65px;
+	}
+
+	.annoucementTitle {
+	    font-size: 30px;
+	    top: 80px;
+	    left: 10px;
+	}
+	.annoucementText {
+	    font-size: 12px;
+	    top: 140px;
+    	left: 10px;
+	}
+	.annoucementDate {
+	    font-size: 12px;
+	}
+	
+	#pastNewsBigText {
+	    font-size: 72px;
+	    margin-left: -20px;
+	    margin-top: 40px;
+	}
+	#imgPastNews {
+	    max-width: 100%; 
+	    margin-top: -45px;
+	    
+	}
+	.pastNewsTitle {
+	    font-size: 18px;
+	    margin-top: -10px;
+	}
+}

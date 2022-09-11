@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><missions>
+<mission completed="false" id="0" minLvl="16">
+<name>Hisoka</name>
+<character characterID="6" current="0" need="5" row="false"/>
+<anime current="0" need="10" row="false" type="hunterxhunter"/>
+</mission>
+<mission completed="false" id="1" minLvl="1">
+<name>Child Nelliel</name>
+<anime current="3" need="5" row="false" type="bleach"/>
+</mission>
+<mission completed="false" id="2" minLvl="21">
+<name>Bankai Kuchiki Byakuya</name>
+<character characterID="9" current="0" need="3" row="true"/>
+<character characterID="16" current="0" need="5" row="false"/>
+<anime current="0" need="20" row="false" type="bleach"/>
+</mission>
+<mission completed="false" id="3" minLvl="6">
+<name>Demon Form Nezuko</name>
+<character characterID="13" current="0" need="5" row="false"/>
+</mission>
+<mission completed="false" id="4" minLvl="36">
+<name>Captain Commander Yamamoto</name>
+<character characterID="9" current="0" need="5" row="true"/>
+<character characterID="30" current="0" need="5" row="true"/>
+<anime current="0" need="30" row="false" type="bleach"/>
+</mission>
+<mission completed="false" id="5" minLvl="11">
+<name>Daki</name>
+<anime current="0" need="15" row="false" type="demonslayer"/>
+</mission>
+</missions>

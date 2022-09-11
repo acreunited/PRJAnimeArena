@@ -1,0 +1,255 @@
+/*Section Play Banner*/
+#play {
+    background-image: url(../img/banner.png);
+    height: 40%;
+    background-position: center;
+    background-size: cover;
+}
+
+#play img {
+    margin-top: 30px;
+}
+
+#play p {
+    margin-top: 30px;
+    font-family: "PP_Mori_Semibold";
+    size: 10px;
+    color: #e8eae3;
+}
+
+/*CharacterCosmetics*/
+.characterCosmeticsStyle li a {
+    text-decoration:none;
+    font-family: 'PP_Mori_Semibold';
+    font-size: 12px;
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+}
+.notActiveAnimeType a{
+    color: #e8eae3;
+}
+.notActiveAnimeType {
+    color: #e8eae3;
+}
+
+.notActive a {
+    color: #372833;
+}
+
+.activeAnime {
+    color: #fa2742;
+    border-bottom: 1px solid #fa2742;
+    padding-bottom: 2px;
+}
+.activeAnime a {
+    color: #fa2742;
+    border-bottom: 1px solid #fa2742;
+    padding-bottom: 2px;
+}
+
+#characterCosmetics ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+}
+
+#characterCosmetics li {
+    padding:20 10px;
+}
+
+/*SearchBar*/
+
+.container {
+    font-family: 'PP_Mori_medium';
+    font-size: 10px;
+    color: #372833;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border:solid #372833 1px ;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a red background */
+.container input:checked ~ .checkmark {
+    background-color: #fa2742;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 4px;
+    width: 5px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+input[type=text] {
+    font-family: 'PP_Mori_regular_italic';
+    font-size: 10px;
+    float: center;
+    padding: 6px;
+    border: none;
+    margin-top: -4px;
+    margin-right: 16px;
+}
+
+.group {
+    border:solid #000000  ;
+    margin: auto;
+    width: 90%;
+}
+
+/*List Missions*/
+
+.groupMissions {
+    margin: 60px;
+    width: 90%;
+    margin-left: 130px;
+}
+
+.requiredLevel {
+    font-family: 'PP_Mori_Semibold';
+    color: #fa2742;
+    font-size: 10px;
+   
+}
+.characterName {
+    font-family: 'Mono_FeatureBold';
+    color: #0e0e0f;
+    font-size: 24px;
+}
+
+.missionName {
+    font-family: 'PP_Mori_Semibold';
+    font-size: 14px;
+    color: #e8eae3;
+    margin-left: 14px;
+    padding-top: 4px;
+}
+
+.missionRank {
+    font-family: 'PP_Mori_medium';
+    font-size: 11px;
+    margin-left: 3px;
+}
+.rank {
+    color: #e8eae3;
+    border-bottom: 1px solid #e8eae3;
+    padding-bottom: 2px;
+}
+.rankName {
+    color: #fa2742;
+}
+
+.missionState {
+    margin-left: 144px;
+    margin-top: -60px;
+    padding: 20px;
+}
+
+.viewMission {
+    font-family: 'PP_Mori_regular_italic';
+    font-size: 10px;
+    text-align: right;
+    margin-right: 104px;
+}
+
+.viewMission a {
+    color: #372833;
+}
+
+.hideSearch {
+	display: none;
+}
+.hideCheckBox {
+	display: none
+}
+.hideCompleted {
+	display: none
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    
+    #spacingSearch {
+    	display: none;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    #spacingSearch {
+    	display: none;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    #spacingSearch {
+    	display: none;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+
+    
+    #spacingSearch {
+    	display: block;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+	#spacingSearch {
+	    	display: block;
+	    }
+}

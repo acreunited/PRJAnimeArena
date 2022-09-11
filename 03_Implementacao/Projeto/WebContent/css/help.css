@@ -1,0 +1,256 @@
+#helpInfo ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    line-height:1.6;
+}
+
+#helpInfo li {
+    padding:20 10px;
+}
+
+li a {
+	text-decoration:none;
+    font-family: 'PP_Mori_Semibold';
+    font-size: 12px;
+    color: #0e0e0f;
+   
+}
+ 
+.activeItem a {
+	color: #fa2742;
+	 border-bottom: 1px solid #fa2742;
+}
+
+
+/*CharacterCosmetics*/
+.characterCosmeticsStyle li a {
+    text-decoration:none;
+    font-family: 'PP_Mori_Semibold';
+    font-size: 12px;
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+}
+.notActiveAnimeType a{
+    color: #e8eae3;
+}
+.notActiveAnimeType {
+    color: #e8eae3;
+}
+
+.notActive a {
+    color: #372833;
+}
+
+.activeAnime {
+    color: #fa2742;
+    border-bottom: 1px solid #fa2742;
+    padding-bottom: 2px;
+}
+.activeAnime a {
+    color: #fa2742;
+    border-bottom: 1px solid #fa2742;
+    padding-bottom: 2px;
+}
+
+#characterCosmetics ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+}
+
+#characterCosmetics li {
+    padding:20 10px;
+}
+
+.text {
+	font-family: 'PP_Mori_Semibold';
+    font-size: 12px;
+    padding: 20px;
+}
+.beforeImage {
+	font-family: 'PP_Mori_Semibold';
+	font-size: 12px;
+	color: #e8eae3;
+	background-color: #000000;s 
+}
+
+.group {
+	margin: auto;
+    width: 80%;
+}
+
+.group2 {
+	border:solid #000000;
+    margin: auto;
+}
+input[type=text] {
+    font-family: 'PP_Mori_regular_italic';
+    font-size: 10px;
+    float: center;
+    border: none;
+    
+}
+#spacingSearch {
+	margin-left:85px;
+	margin-top:10px;
+	padding:20px;
+}
+
+#justExample {
+	font-family: 'PP_Mori_Semibold';
+	font-size: 9px;
+	text-align: right;
+	width: 78.7%;
+}
+#justExample2 {
+	font-family: 'PP_Mori_Semibold';
+	font-size: 9px;
+	text-align: right;
+	width: 78.7%;
+}
+
+.letters {
+	color: #0e0e0f;
+	background-color: #fa2742;
+	border-radius: 20px;
+	padding:3px 7px;
+ 	width:max-content; 
+ 	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+.groupRow {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.beforeImage2 {
+	font-family: 'PP_Mori_Semibold';
+	font-size: 12px;
+	color: #e8eae3;
+	background-color: #000000;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+    width: 80%;
+     
+}
+/*
+.border {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}*/
+
+#footer {
+	margin-top: 20px;
+}
+/* style="width:126px"*/
+.text img {
+	padding: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.group-form {
+	width: 40%;
+	height: 266px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	font-family: 'PP_Mori_Semibold';
+	font-size: 12px;
+}
+.blackBackground {
+	color: black;
+ 	height: 4%;
+    background-color: black;
+}
+.group-formRes {
+	width: 352px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	font-family: 'PP_Mori_Semibold';
+	font-size: 12px;
+	margin: auto;
+}
+.blackBackgroundRes {
+	color: black;
+ 	height: 4%;
+    background-color: black;
+    margin: auto;
+}
+#expText {
+  padding: 20px;
+   letter-spacing: 2px;
+}
+#expText2 {
+  padding: 20px;
+   letter-spacing: 2px;
+}
+
+  /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+	.small {
+		display: block;
+	}
+	.big {
+		display: none;
+	}
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+	.small {
+		display: block;
+	}
+	.big {
+		display: none;
+	}
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+	.small {
+		display: none;
+	}
+	.big {
+		display: block;
+	}
+	#expText {
+	 	font-size: 10px;
+	}
+	#expText2 {
+	 	font-size: 10px;
+	}
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+	
+	.small {
+		display: none;
+	}
+	.big {
+		display: block;
+	}
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+	.small {
+		display: none;
+	}
+	.big {
+		display: block;
+	}
+}
